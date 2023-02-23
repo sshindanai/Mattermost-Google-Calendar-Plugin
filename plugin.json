@@ -1,0 +1,73 @@
+{
+  "id": "sshindanai.google-calendar-plugin",
+  "name": "Google Calendar",
+  "description": "Google Calendar plugin for Mattermost",
+  "icon_path": "assets/icon.svg",
+  "version": "0.2.0",
+  "server": {
+    "executables": {
+      "linux-amd64": "server/dist/plugin-linux-amd64",
+      "darwin-amd64": "server/dist/plugin-darwin-amd64",
+      "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+    }
+  },
+  "settings_schema": {
+    "header": "Google Calendar Plugin configuration",
+    "settings": [
+      {
+        "key": "SiteUrl",
+        "display_name": "Site Url:",
+        "type": "text",
+        "help_text": "Site URL for mattermost plugin."
+      },
+      {
+        "key": "CalendarClientID",
+        "display_name": "Google Calendar OAuth Client ID:",
+        "type": "text",
+        "help_text": "The client ID for the OAuth app registered with Google Cloud."
+      },
+      {
+        "key": "CalendarClientSecret",
+        "display_name": "Google Calendar OAuth Client Secret:",
+        "type": "text",
+        "help_text": "The client secret for the OAuth app registered with Google Cloud."
+      },
+      {
+        "key": "DbHost",
+        "display_name": "Database Host:",
+        "type": "text",
+        "help_text": "Database Host for plugin database"
+      },
+      {
+        "key": "DbPort",
+        "display_name": "Database Port:",
+        "type": "text",
+        "help_text": "Database Port for plugin database"
+      },
+      {
+        "key": "DbUser",
+        "display_name": "Database User:",
+        "type": "text",
+        "help_text": "Database User for plugin database"
+      },
+      {
+        "key": "DbPassword",
+        "display_name": "Database Password:",
+        "type": "text",
+        "help_text": "Database Password for plugin database"
+      },
+      {
+        "key": "DbName",
+        "display_name": "Database Name:",
+        "type": "text",
+        "help_text": "Database Name want to connect"
+      },
+      {
+        "key": "EncryptionSecret",
+        "display_name": "Encrypt-Decrypt Secret:",
+        "type": "text",
+        "help_text": "Secret for Encryption and Decryption "
+      }
+    ]
+  }
+}
